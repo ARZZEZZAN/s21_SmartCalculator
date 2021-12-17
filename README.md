@@ -19,6 +19,8 @@ The russian version of the task can be found in the repository.
 
 ## Preamble
 
+![SmartCalc](misc/eng/images/smartcalc.jpg)
+
 Muffled footsteps quickly approached the room. It was strange, as if the person walking was barefoot. A sudden stop at the door, some inarticulate dialogue apparently with a passerby... the door opens and he enters. As he looks around the room on the go, he quickly grabs a few people out of the crowd that was discussing something and gestured them to follow him.
 
 He speaks as he goes:
