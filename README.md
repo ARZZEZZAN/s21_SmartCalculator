@@ -176,6 +176,7 @@ The SmartCalc v1.0 program must be implemented:
 - The program must be developed according to the principles of structured programming
 - Prepare full coverage of modules related to calculating expressions with unit-tests
 - GUI implementation, based on any GUI library with API for C89/C99/C11 (GTK+, Nuklear, raygui, microui, libagar, libui, IUP, LCUI, CEF, Qt, etc.)
+- Both integers and real numbers with a dot can be input into the program. You can optionally provide the input of numbers in exponential notation
 - Calculating arbitrary bracketed arithmetic expressions in infix notation
 - Calculate arbitrary bracketed arithmetic expressions in infix notation with substitution of the value of _x_
 - Plotting a graph of a function given by an expression in infix notation with the variable _x_ (with coordinate axes, mark of the used scale and an adaptive grid)
@@ -203,7 +204,7 @@ The SmartCalc v1.0 program must be implemented:
       | Computes tangent | tan(x) |
       | Computes arc cosine | acos(x) |
       | Computes arc sine | asin(x) |
-      | Computes arc tangent | sqrt(x) |
+      | Computes arc tangent | atan(x) |
       | Computes square root | sqrt(x) |
       | Computes natural logarithm | ln(x) |
       | Computes common logarithm | log(x) |
