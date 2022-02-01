@@ -6,6 +6,7 @@ The russian version of the task can be found in the repository.
 
 
 ## Contents
+
 0. [Preamble](#preamble)
 1. [Chapter I](#chapter-i) \
    1.1. [Introduction](#introduction)
@@ -20,6 +21,8 @@ The russian version of the task can be found in the repository.
 ## Preamble
 
 ![SmartCalc](misc/eng/images/smartcalc.jpg)
+
+Planet Earth, USA, California, Cupertino, 10260 Bandley Drive, August 5, 1981.
 
 Muffled footsteps quickly approached the room. It was strange, as if the person walking was barefoot. A sudden stop at the door, some inarticulate dialogue apparently with a passerby... the door opens and he enters. As he looks around the room on the go, he quickly grabs a few people out of the crowd that was discussing something and gestured them to follow him.
 
