@@ -22,7 +22,7 @@ The russian version of the task can be found in the repository.
 
 ![SmartCalc](misc/eng/images/smartcalc.jpg)
 
-Planet Earth, USA, California, Cupertino, 10260 Bandley Drive, August 5, 1981.
+Planet Earth, USA, California, Cupertino, 10260 Bandley Drive, August 5, 1983.
 
 Muffled footsteps quickly approached the room. It was strange, as if the person walking was barefoot. A sudden stop at the door, some inarticulate dialogue apparently with a passerby... the door opens and he enters. As he looks around the room on the go, he quickly grabs a few people out of the crowd that was discussing something and gestured them to follow him.
 
@@ -38,7 +38,7 @@ He speaks as he goes:
 
 *-- That's why I'm giving you another week! Where's Chris? Has anyone seen him?*
 
-Chris Espinosa was outside the door in his office and heard that Jobs was looking for him. The fifth version of the Macintosh calculator had already been written, and he had a feeling that this was just the beginning. Except his morale was about to run out! Suddenly he heard somebody saying "he seems to be in his office" and then the swift footsteps of bunch of people rushed in Chris's direction. Fear took hold of him for a moment, but he quickly pulled himself together and came to his senses. After all, it was just a calculator! The door opened and Jobs entered the room, while the rest of people stayed behind the office.
+Chris Espinosa was outside the door in his office and heard that Jobs was looking for him. The fifth version of the Macintosh calculator had already been written, and he had a feeling that this was just the beginning. Except his morale was about to run out! Suddenly he heard somebody saying *"he seems to be in his office"* and then the swift footsteps of bunch of people rushed in Chris's direction. Fear took hold of him for a moment, but he quickly pulled himself together and came to his senses. After all, it was just a calculator! The door opened and Jobs entered the room, while the rest of people stayed behind the office.
 
 *-- Chris, how's our calculator doing?*
 
@@ -173,7 +173,7 @@ End.
 
 The SmartCalc v1.0 program must be implemented:
 
-- The program must be developed in C language of C11 standard using gcc compiler
+- The program must be developed in C language of C11 standard using gcc compiler. You can use any additional QT libraries and modules
 - The program code must be located in the src folder
 - The program must be built with Makefile which contains standard set of targets for GNU-programs: all, install, uninstall, clean, dvi, dist, tests, gcov. Installation directory could be arbitrary, except the building one
 - The program must be developed according to the principles of structured programming
