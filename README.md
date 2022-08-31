@@ -180,6 +180,7 @@ The SmartCalc v1.0 program must be implemented:
 - The program code must be located in the src folder
 - The program must be built with Makefile which contains standard set of targets for GNU-programs: all, install, uninstall, clean, dvi, dist, tests, gcov_report. Installation directory could be arbitrary, except the building one
 - The program must be developed according to the principles of structured programming
+- When writing code it is necessary to follow the Google style
 - Prepare full coverage of modules related to calculating expressions with unit-tests using the Check library
 - GUI implementation, based on any GUI library with API for C89/C99/C11 (GTK+, Nuklear, raygui, microui, libagar, libui, IUP, LCUI, CEF, Qt, etc.)
 - Both integers and real numbers with a dot can be input into the program. You can optionally provide the input of numbers in exponential notation
