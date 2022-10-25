@@ -239,3 +239,5 @@ Provide a special mode "deposit profitability calculator" (you can take banki.ru
 - Output: accrued interest, tax amount, deposit amount by the end of the term
 
 
+
+💡 [Tap here](https://forms.yandex.ru/u/6357d9a773cee730f2ba7e9d/) **to leave your feedback on the project**. Pedago Team really tries to make your educational experience better.
