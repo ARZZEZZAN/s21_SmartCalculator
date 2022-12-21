@@ -4,6 +4,7 @@ TST_CFLAGS:= -g $(STDFLAGS) -g
 GCOV_FLAGS?=-fprofile-arcs -ftest-coverage
 LINUX_FLAGS=-lsubunit -lrt -lpthread -lm
 LIBS=-lcheck
+APP = build/ArmenianCalculator.app 
 VALGRIND_FLAGS=--trace-children=yes --track-fds=yes --track-origins=yes --leak-check=full --show-leak-kinds=all --verbose
 
 TARGET=s21_matrix.a
@@ -36,7 +37,25 @@ $(TARGET): ${SRC}
 	cp $@ lib$@
 	make clean_obj
 
-test: $(TARGET)
+build:
+	mkdir build
+	cd ./build/ && qmake ../ && make  && mv ArmenianCalculator2022.app ArmenianCalculator.app
+
+install: build
+	@mkdir $(HOME)/Desktop/SmartCalc_v1.0/
+	@cp -rf $(APP) $(HOME)/Desktop/SmartCalc_v1.0/
+	make clean
+
+uninstall:
+	@rm -rf $(HOME)/Desktop/SmartCalc_v1.0/
+
+dvi:
+
+
+dist:
+
+
+tests: $(TARGET)
 ifeq ($(OS), Darwin)
 	${CC} $(STDFLAGS) ${TEST_SRC} $< -o unit_test $(LIBS)
 else
@@ -97,5 +116,10 @@ clean_test:
 clean: clean_lib clean_lib clean_test clean_obj
 	rm -rf unit_test
 	rm -rf RESULT_VALGRIND.txt
+	rm -rf *.o *.a
+	rm -rf *.gcda *.gcno *.info
+	rm -rf s21_test report
+	rm -rf s21_calc s21_test
+	rm -rf ./build*
 
 .PHONY: all clean check lcov

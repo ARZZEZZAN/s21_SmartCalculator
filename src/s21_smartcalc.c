@@ -130,10 +130,6 @@ lexeme s21_calculate_withFunctions(double num, lexeme_enum type) {
     result.value = log(num);
   } else if (type == LOG_LEXEME) {
     result.value = log10(num);
-  } else if (type == UNARM_LEXEME) {
-    result.value = num * (-1);
-  } else if (type == UNARP_LEXEME) {
-    result.value = +num;
   }
   return result;
 }
@@ -212,10 +208,6 @@ double s21_smart_calc(char *str, double x) {
     s21_push(&numbers, 0, DIG_LEXEME, 0);  //запуш нолек если унарный минус
   }
   while (i < (int)strlen(str)) {
-    // printf("\nstack numbers:\n");
-    // s21_printf_stack(numbers);
-    // printf("\nstack operations:\n");
-    // s21_printf_stack(operations);
     double value = 0;
     if (s21_skip_space(&str[i], &end)) {
       i += end - &str[i];
@@ -237,7 +229,6 @@ double s21_smart_calc(char *str, double x) {
   }
   lexeme resultt = s21_top(&numbers);
   value = resultt.value;
-  // printf("\nresult = %lf\n", value);
   free(numbers);
   free(operations);
   return value;
@@ -267,29 +258,12 @@ void s21_priority(lexeme **stackNum, lexeme **stackFunc, lexeme tmp, double x) {
     s21_pop(stackFunc);
   }
 }
-/// @brief Вывод стека
-/// @param stack стек
-void s21_printf_stack(lexeme *stack) {
-  lexeme *stack_print = stack;
-  while (stack_print) {
-    printf("%lf, %d, %d", stack_print->value, stack_print->priority,
-           (int)stack_print->type);
-    stack_print = stack_print->next;
-    if (stack_print) {
-      printf("\n");
-    }
-  }
-  printf("\n");
-}
 void s21_calculation(lexeme **stackFunc, lexeme **stackNum) {
   lexeme operation = s21_top(stackFunc);
-  // printf("num = %lf\n\n", (*stackNum)->value);
-  // printf("TYPE = %d\n\n", (*stackFunc)->type);
   s21_pop(stackFunc);
 
   lexeme operand1 = {0};
   lexeme operand2 = {0};
-  //  printf("type = %d\n", operation.type);
   // For Understanding the operation because of my structure
   if (operation.type > 8) {
     operand2 = s21_top(stackNum);
@@ -431,7 +405,3 @@ int s21_validator(char *str) {
   }
   return res;
 }
-// int main() {
-//   char *str = "5 + 5";
-//   printf("%lf\n", s21_smart_calc(str, 0.0));
-// }

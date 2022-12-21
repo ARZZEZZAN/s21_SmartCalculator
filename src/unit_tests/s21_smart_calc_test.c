@@ -114,6 +114,26 @@ START_TEST(calc_test) {
     ck_assert_msg(result, "test-10 failed");
   }
   {
+    char src[100] = "-(o(i(a(10.01)*n(2))/10m(2))^q(5)";
+    int result = s21_validator(src);
+    ck_assert_msg(!result, "test-10 failed");
+  }
+  {
+    char src[100] = "mod+9(()))";
+    int result = s21_validator(src);
+    ck_assert_msg(!result, "test-10 failed");
+  }
+  {
+    char src[100] = "md(+9(()))";
+    int result = s21_validator(src);
+    ck_assert_msg(!result, "test-10 failed");
+  }
+  {
+    char src[100] = "-(o(i(a(10.01)*n(2))/10md+(2))^q(5)";
+    int result = s21_validator(src);
+    ck_assert_msg(!result, "test-10 failed");
+  }
+  {
     char src[100] = ")(s(x)";
     int result = s21_validator(src);
     ck_assert_msg(!result, "test-10 failed");
