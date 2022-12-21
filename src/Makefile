@@ -50,10 +50,15 @@ uninstall:
 	@rm -rf $(HOME)/Desktop/SmartCalc_v1.0/
 
 dvi:
-
+	open Calculator.html
 
 dist:
-
+	mkdir SmartCalc_v1.0/
+	mkdir SmartCalc_v1.0/src
+	cp Makefile *.c *.h *.pro *.cpp *.ui *.user SmartCalc_v1.0/src/
+	tar cvzf SmartCalc_v1.0.tgz SmartCalc_v1.0/
+	mv SmartCalc_v1.0.tgz $(HOME)/Desktop/
+	rm -rf SmartCalc_v1.0/
 
 tests: $(TARGET)
 ifeq ($(OS), Darwin)
